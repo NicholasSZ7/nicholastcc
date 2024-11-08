@@ -1,106 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NICHOLAS</title>
+    <title>Jogo da Velha</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Fórmula 1</h1>
-
-
-        <nav>
-            <ul>
-                <li><a href="historia.html">História</a></li>
-                <li><a href="equipes_e_pilotos.html">Equipes e Pilotos</a></li>
-                <li><a href="temporada_atual.html">Temporada Atual</a></li>
-                <li><a href="tecnologia_e_inovacao.html">Tecnologia e Inovação</a></li>
-                <li><a href="estatisticas.html">Estatísticas</a></li>
-                <li><a href="circuitos.html">Circuitos</a></li>
-                <li><a href="noticias.html">Notícias</a></li>
-                <li><a href="cultura.html">Cultura</a></li>
-                <li><a href="merchandising.html">Merchandising</a></li>
-                <li><a href="simuladores_e_games.html">Simuladores e Games</a></li>
-                <li><a href="seguranca.html">Segurança</a></li>
-                <li><a href="economia.html">Economia</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-
-    <main>
-        <section id="historia">
-            <h2>História da Fórmula 1</h2>
-            <p>Detalhes sobre a história da Fórmula 1...</p>
-        </section>
-
-        <section id="equipes">
-            <h2>Equipes e Pilotos</h2>
-            <p>Informações sobre as equipes e pilotos...</p>
-        </section>
-
-        <section id="temporada">
-            <h2>Temporada Atual</h2>
-            <p>Atualizações sobre a temporada atual...</p>
-        </section>
-
-        <section id="tecnologia">
-            <h2>Tecnologia e Inovação</h2>
-            <p>Avanços tecnológicos na Fórmula 1...</p>
-        </section>
-
-        <section id="estatisticas">
-            <h2>Estatísticas e Dados</h2>
-            <p>Estatísticas e dados históricos...</p>
-        </section>
-
-        <section id="circuitos">
-            <h2>Circuitos</h2>
-            <p>Informações sobre os circuitos...</p>
-        </section>
-
-        <section id="noticias">
-            <h2>Notícias e Atualizações</h2>
-            <p>Últimas notícias e atualizações...</p>
-        </section>
-
-        <section id="cultura">
-            <h2>Cultura e Comunidade F1</h2>
-            <p>Aspectos culturais da F1...</p>
-        </section>
-
-        <section id="merchandising">
-            <h2>Merchandising e Produtos</h2>
-            <p>Produtos e parcerias da F1...</p>
-        </section>
-
-        <section id="simuladores">
-            <h2>Simuladores e Games</h2>
-            <p>Informações sobre jogos e simuladores...</p>
-        </section>
-
-        <section id="seguranca">
-            <h2>Segurança na Fórmula 1</h2>
-            <p>Medidas de segurança e incidentes...</p>
-        </section>
-
-        <section id="economia">
-            <h2>Economia da Fórmula 1</h2>
-            <p>Impacto econômico e finanças...</p>
-        </section>
-    </main>
-
-    
-
-<div class="  nome: <input type="text" name="name" id="txtnome"><br /><br />
-    email: <input type="text" name="name" id="txtnome"><br /><br/>
-    <p>mensagem:<small><br</small></p>
-    <textarea rows="5" cols="30"></textarea><br />
-    <input type="submit" value="Enviar"></div>
-
+    <h1>Jogo da Velha</h1>
+    <div class="modo-jogo">
+        <button onclick="iniciarJogo('2jogadores')">Dois Jogadores</button>
+        <button onclick="iniciarJogo('contraMaquina')">Contra Máquina</button>
+    </div>
+    <div id="tabuleiro" class="tabuleiro"></div>
+    <p id="mensagem"></p>
     <script src="script.js"></script>
 </body>
 </html>
