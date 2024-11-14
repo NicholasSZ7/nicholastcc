@@ -27,7 +27,7 @@ body {
   
   /* Estilo do botão */
   button {
-    background-color: #4CAF50; /* Cor de fundo do botão */
+    background-color: #61dafb; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove a borda padrão */
     padding: 10px 20px; /* Espaçamento interno do botão */
@@ -39,7 +39,7 @@ body {
   
   /* Efeito ao passar o mouse sobre o botão */
   button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #0091b9; /* Cor de fundo ao passar o mouse */
   }
   
   /* Estilo do parágrafo */

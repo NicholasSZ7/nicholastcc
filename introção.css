@@ -3,15 +3,15 @@ table {
     border-collapse: collapse;
   }
   th, td {
-    border: 1px solid #eeff00;
+    border: 1px solid #61dafb;
     padding: 8px;
     text-align: left;
   }
   th {
-    background-color: #eeff00;
+    background-color: #61dafb;
   }
   tr:nth-child(even) {
-    background-color: #f0ff19;
+    background-color: #61dafb;
   }
   h1{
     text-align: center;
@@ -21,3 +21,4 @@ table {
       font-size: 20px;
     }
   }
+

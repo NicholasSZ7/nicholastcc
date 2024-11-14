@@ -1,8 +1,14 @@
+body{
+    background-color:#282c34;
+}
+
 h1 {
+    color: white;
     text-align: center;
   }
   
   ul {
+    color: aqua;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -10,12 +16,16 @@ h1 {
   
   a {
     text-decoration: none;
-    color: #000;
+    color: #b3a8a8;
     padding: 10px;
     margin: 10px;
-    border: 1px solid #000;
+    border: 1px solid #07cdff;
+  }
+
+  button {
+    color: rgb(0, 255, 255);
   }
   
   a:hover {
-    background-color: #ccc;
+    background-color: #006992;
   }
