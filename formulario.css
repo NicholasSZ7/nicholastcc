@@ -1,0 +1,101 @@
+/* Importando a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Estilo do título */
+h2 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center; /* Centraliza o conteúdo do formulário */
+}
+
+/* Estilo dos rótulos */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+/* Estilo dos inputs e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%; /* Define uma largura de 90% */
+    max-width: 400px; /* Limita a largura máxima para centralizar */
+    padding: 10px;
+    margin: 10px auto; /* Centraliza os campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; /* Faz os campos se comportarem como blocos */
+    text-align: left; /* Alinha o texto dentro do campo à esquerda */
+}
+
+/* Estilo do botão de envio */
+input[type="submit"] {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; /* Centraliza o botão */
+    font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+}
+
+input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+/* Estilo do aviso */
+.aviso {
+    background-color: #ff0000;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte */
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Estilo da lista */
+ul {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px; /* Espaçamento entre os itens da lista */
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}

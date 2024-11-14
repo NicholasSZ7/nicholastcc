@@ -1,0 +1,50 @@
+/* style.css */
+
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte para o corpo */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    margin: 0; /* Remove margens padrão */
+    padding: 20px; /* Adiciona um pouco de espaço interno */
+  }
+  
+  /* Container principal */
+  .dom {
+    background-color: white; /* Cor de fundo do container */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+    max-width: 400px; /* Largura máxima do container */
+    margin: 50px auto; /* Centraliza horizontalmente com margem superior */
+    padding: 20px; /* Espaçamento interno do container */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  
+  /* Estilo do título */
+  h1 {
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+  }
+  
+  /* Estilo do botão */
+  button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  }
+  
+  /* Efeito ao passar o mouse sobre o botão */
+  button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  }
+  
+  /* Estilo do parágrafo */
+  p {
+    font-size: 18px; /* Tamanho da fonte do parágrafo */
+    color: #555; /* Cor do texto do parágrafo */
+    margin-top: 20px; /* Espaço acima do parágrafo */
+  }

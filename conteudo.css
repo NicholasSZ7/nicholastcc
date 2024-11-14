@@ -3,7 +3,7 @@
 /* Estilos gerais do body */
 body {
     font-family: Arial, sans-serif; /* Define a fonte para o corpo */
-    background-color: #f4f4f4; /* Cor de fundo da página */
+    background-color: #282c34; /* Cor de fundo da página */
     margin: 0; /* Remove margens padrão */
     padding: 20px; /* Adiciona um pouco de espaço interno */
 }
@@ -28,8 +28,8 @@ h1 {
 /* Estilo dos links */
 a {
     display: inline-block; /* Faz com que os links se comportem como botões */
-    background-color: #4CAF50; /* Cor de fundo dos links */
-    color: white; /* Cor do texto dos links */
+    background-color: #61dafb; /* Cor de fundo dos links */
+    color: #282c34; /* Cor do texto dos links */
     padding: 10px 20px; /* Espaçamento interno dos links */
     border-radius: 5px; /* Cantos arredondados dos links */
     text-decoration: none; /* Remove o sublinhado dos links */
@@ -39,5 +39,5 @@ a {
 
 /* Efeito ao passar o mouse sobre os links */
 a:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #00a4d1; /* Cor de fundo ao passar o mouse */
 }
