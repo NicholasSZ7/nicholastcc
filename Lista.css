@@ -1,0 +1,58 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#taskList li.completed {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
+
+/* Animações e transições */
+li {
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.02);
+}
