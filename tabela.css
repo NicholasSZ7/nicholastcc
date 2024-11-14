@@ -1,0 +1,38 @@
+.a {
+    background-color:#810505;
+    padding: 20px;
+    text-align: center;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5c0505;
+    color: #f8f8f8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right; 
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #880303;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #880303;
+    }
+    tr:nth-child(even) {
+        background-color: #880303;
+    }
+    h1{
+        text-align: center;
+    }
