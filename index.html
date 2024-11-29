@@ -15,10 +15,19 @@
     <div id="tabuleiro" class="tabuleiro"></div>
     <p id="mensagem"></p>
 
+    <div id="placar" class="placar">
+        <h2>Placar</h2>
+        <div class="placar-info">
+            <p><strong>Jogador X</strong>: <span id="pontosX">0</span></p>
+            <p><strong>Jogador O</strong>: <span id="pontosO">0</span></p>
+            <p><strong>Empates</strong>: <span id="empates">0</span></p>
+        </div>
+        <button onclick="zerarPlacar()">Zerar Placar</button>
+    </div>
+
     <div class="button-container">
         <a href="conteudo.html" class="btn">conteúdo</a>
     </div>
-
 
     <script src="script.js"></script>
 </body>

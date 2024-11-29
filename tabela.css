@@ -1,38 +1,73 @@
-.a {
-    background-color:#61dafb;
-    padding: 20px;
+body {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
-  }
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #61dafb;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    }
-    .container {
-    width: 100%;
+    background-color: #282c34;
+    color: #61dafb;
+    margin: 0;
     padding: 20px;
-    box-sizing: border-box;
-    text-align: right; 
-    }
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid #61dafb;
-        padding: 8px;
-        text-align: left;
-    }
-    th {
-        background-color: #61dafb;
-    }
-    tr:nth-child(even) {
-        background-color: #61dafb;
-    }
-    h1{
-        text-align: center;
-    }
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #61dafb;
+    border: none;
+    color: #282c34;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21a1f1;
+}
+
+#tela-inicial, #jogo-da-velha, #jogo-da-forca {
+    display: none;
+}
+
+#tela-inicial h1, #jogo-da-velha h1, #jogo-da-forca h1 {
+    margin-bottom: 20px;
+}
+
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 10px;
+    margin: 20px auto;
+}
+
+.celula {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #61dafb;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #282c34;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.celula:hover {
+    transform: scale(1.05);
+}
+
+.placar {
+    margin-top: 20px;
+}
+
+#palavra-oculta {
+    font-size: 24px;
+    letter-spacing: 5px;
+}
+
+#entrada-letra {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}

@@ -93,140 +93,47 @@ h1 {
   background-color: #2980b9;
 }
 
-/* Estilo para o título do formulário */
-form h2 {
-  text-align: center;
-  font-size: 36px;
-  color: #101820;
-  margin-bottom: 20px;
+.placar {
   margin-top: 20px;
-}
-
-/* Estilos do formulário */
-form {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form label {
   font-size: 18px;
-  color: #333;
-  display: block;
-  margin-bottom: 5px;
+  color: #fff;
+  text-align: center;
+  background-color: #3e4e5e;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
+.placar h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #61dafb;
+  text-shadow: 1px 1px #000;
+}
+
+.placar-info {
+  background-color: #282c34;
   padding: 10px;
-  margin: 8px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-form textarea {
-  resize: vertical;
+.placar-info p {
+  margin: 5px 0;
+  font-size: 20px;
+  text-shadow: 1px 1px #000;
 }
 
-form input[type="submit"] {
-  background-color: #FFF200;
-  color: #101820;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+.placar-info strong {
+  color: #ffbc00;
+}
+
+.placar-info span {
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.placar-info p:hover {
+  background-color: #4c5b69;
   cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-form input[type="submit"]:hover {
-  background-color: #e1d000;
-}
-
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 5px;
-}
-
-/* Responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-  /* Ajustes no cabeçalho */
-  nav {
-      flex-direction: column;
-      text-align: center;
-  }
-
-  .nav-links {
-      flex-direction: column;
-      gap: 15px;
-      margin-left: 0;
-  }
-
-  .hero {
-      padding: 300px 20px;
-  }
-
-  .hero h1 {
-      font-size: 2.5rem;
-  }
-
-  .hero p {
-      font-size: 1.2rem;
-  }
-
-  .features {
-      flex-direction: column;
-      padding: 50px 20px;
-      margin: 20px 0;
-  }
-
-  .feature {
-      width: 100%;
-      margin-bottom: 20px;
-  }
-
-  .video-container iframe {
-      width: 100%;
-      height: auto;
-  }
-
-  .testimonial-card {
-      width: 100%;
-      margin: 20px 0;
-  }
-
-  form {
-      width: 90%;
-  }
-}
-
-/* Responsividade para telas muito pequenas (ex: celulares antigos) */
-@media (max-width: 480px) {
-  .hero h1 {
-      font-size: 1.8rem;
-  }
-
-  .hero p {
-      font-size: 1rem;
-  }
-
-  .cta-btn {
-      padding: 10px 20px;
-      font-size: 1rem;
-  }
-
-  .feature, .testimonial-card {
-      width: 100%;
-      margin: 10px 0;
-  }
-
-  footer {
-      padding: 10px;
-  }
+  border-radius: 5px;
 }

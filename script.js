@@ -29,14 +29,6 @@ function fazerJogada(index) {
     document.querySelector(`.celula[data-index='${index}']`).classList.add('ocupada');
 
     if (verificarVencedor()) {
-        document.getElementById('mensagem').innerText = `Jogador ${jogadorAtual} venceu!`;
-        jogoAtivo = false;
-        return;
-    }
-
-    if (!tabuleiro.includes('')) {
-        document.getElementById('mensagem').innerText = 'Empate!';
-        jogoAtivo = false;
         return;
     }
 
@@ -58,6 +50,19 @@ function jogadaDaMaquina() {
     }, 500);
 }
 
+function atualizarPlacar() {
+    if (jogadorAtual === 'X') {
+        pontosX++;
+    } else if (jogadorAtual === 'O') {
+        pontosO++;
+    }
+
+    // Atualizando o placar na interface
+    document.getElementById('pontosX').innerText = pontosX;
+    document.getElementById('pontosO').innerText = pontosO;
+    document.getElementById('empates').innerText = empates;
+}
+
 function verificarVencedor() {
     const combinacoesVitoria = [
         [0, 1, 2],
@@ -70,11 +75,46 @@ function verificarVencedor() {
         [2, 4, 6]
     ];
 
+    // Verificar se há um vencedor
     for (const combinacao of combinacoesVitoria) {
         const [a, b, c] = combinacao;
         if (tabuleiro[a] && tabuleiro[a] === tabuleiro[b] && tabuleiro[a] === tabuleiro[c]) {
+            // Atualiza o placar e mensagem com o vencedor
+            atualizarPlacar();
+            document.getElementById('mensagem').innerText = `Jogador ${jogadorAtual} venceu!`;
+            jogoAtivo = false;
             return true;
         }
     }
+
+    // Verificar se houve empate
+    if (!tabuleiro.includes('')) {
+        empates++;
+        document.getElementById('mensagem').innerText = 'Empate!';
+        jogoAtivo = false;
+        document.getElementById('empates').innerText = empates; // Atualiza o placar com o empate
+        return true;
+    }
+
     return false;
+}
+
+
+let pontosX = 0;
+let pontosO = 0;
+let empates = 0;
+
+function zerarPlacar() {
+    // Zera os pontos dos jogadores e empates
+    pontosX = 0;
+    pontosO = 0;
+    empates = 0;
+
+    // Atualiza o placar na interface
+    document.getElementById('pontosX').innerText = pontosX;
+    document.getElementById('pontosO').innerText = pontosO;
+    document.getElementById('empates').innerText = empates;
+
+    // Exibe uma mensagem de confirmação
+    document.getElementById('mensagem').innerText = 'Placar zerado!';
 }
